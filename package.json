@@ -2,8 +2,9 @@
   "name": "webdriverio-framework",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "devDependencies": {
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {
     "@types/jasmine": "^5.1.4",
     "@wdio/cli": "^8.27.1",
     "@wdio/jasmine-framework": "^8.27.0",
@@ -14,7 +15,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "wdio": "wdio run ./wdio.conf.ts"
+    "wdio": "wdio run ./wdio.conf.ts",
+    "build":"tsc"
   },
   "author": "",
   "license": "ISC"

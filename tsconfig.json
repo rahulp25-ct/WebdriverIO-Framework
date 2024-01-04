@@ -14,17 +14,14 @@
             "@wdio/jasmine-framework"
         ],
         "skipLibCheck": true,
-        "noEmit": true,
-        "allowImportingTsExtensions": true,
         "resolveJsonModule": true,
         "isolatedModules": true,
         "strict": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
-        "noFallthroughCasesInSwitch": true
+        "noFallthroughCasesInSwitch": true,
+        "outDir": "dist",
+        "declaration": true
     },
-    "include": [
-        "test",
-        "wdio.conf.ts"
-    ]
+    "exclude": ["node_modules"]
 }
